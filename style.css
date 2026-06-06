@@ -18,6 +18,7 @@
 body {
     width: 85%;
     margin: auto;
+    height: 100vh;
 }
 
 header {
@@ -371,12 +372,18 @@ header .auth ul li a:hover {
 
 .footer {
     display: flex;
-    width: 100%;
-    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+    
+    .col {
+        flex: 1;
+        min-width: 150px;
+    }
 
     .app-qr {
         display: flex;
-        width: 15%;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -402,7 +409,6 @@ header .auth ul li a:hover {
 
     .loyalty {
         display: flex;
-        width: 15%;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
@@ -419,7 +425,6 @@ header .auth ul li a:hover {
 
             img {
                 width: 16px;
-                left: 2;
             }
 
             span {
@@ -431,10 +436,10 @@ header .auth ul li a:hover {
 
     .social-media {
         display: flex;
-        width: 15%;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        margin-left: 35px;
 
         h2 {
             font-size: 18px;
@@ -450,23 +455,143 @@ header .auth ul li a:hover {
             gap: 6px;
 
             .acc {
+                display: flex;
+                gap: 7px;
+                align-items: center;
+
+                i {
+                    font-size: 16px;
+                }
+
+                span {
+                    text-transform: capitalize;
+                    font-size: 17px;
+                    font-family: var(--main-font);
+                    letter-spacing: 2.5;
+                }
+            }
+        }
+
+    }
+
+    .customer-service {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
+        }
+
+        .cs-info {
             display: flex;
-            gap: 7px;
-            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            gap: 6px;
 
-            i {
-                font-size: 16px;
-            }
+            .cs {
+                display: flex;
+                gap: 7px;
+                align-items: center;
 
-            span {
-                text-transform: capitalize;
-                font-size: 17px;
-                font-family: var(--main-font);
-                letter-spacing: 2.5;
+                i {
+                    font-size: 16px;
+                }
+
+                span {
+                    text-transform: capitalize;
+                    font-size: 17px;
+                    font-family: var(--main-font);
+                    letter-spacing: 2.5;
+                }
             }
         }
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
         }
 
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            gap: 6px;
+
+            .cont {
+                display: flex;
+                gap: 7px;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #1a1a1a;
+                    font-size: 17px;
+                    font-family: var(--main-font);
+                    letter-spacing: 2.5;
+                }
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+    .payment-accept {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        margin-top: 40px;
+        
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
+        }
+        
+        .payment-img {
+            width: 300px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid rgb(176, 173, 173);
+        width: 100%;
+    }
+
+    .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 32px;
+        
+        span {
+            font-size: 14px;
+            color: gray;
+            font-family: var(--main-font);
+        }
     }
 }
 
