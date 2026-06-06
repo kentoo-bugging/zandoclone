@@ -369,6 +369,107 @@ header .auth ul li a:hover {
     gap: 5px;
 }
 
+.footer {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+
+    .app-qr {
+        display: flex;
+        width: 15%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
+        }
+
+        .qr-img {
+            width: 90px;
+            height: 90px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .loyalty {
+        display: flex;
+        width: 15%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
+        }
+
+        .loyalty-text {
+            display: flex;
+            gap: 3px;
+
+            img {
+                width: 16px;
+                left: 2;
+            }
+
+            span {
+                font-size: 16px;
+                font-family: var(--main-font);
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        width: 15%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        h2 {
+            font-size: 18px;
+            font-family: var(--main-font);
+            text-transform: uppercase;
+        }
+
+        .sm-acc {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            gap: 6px;
+
+            .acc {
+            display: flex;
+            gap: 7px;
+            align-items: center;
+
+            i {
+                font-size: 17px;
+            }
+
+            span {
+                text-transform: capitalize;
+                font-size: 17px;
+                font-family: var(--main-font);
+                letter-spacing: 2.5;
+            }
+        }
+        }
+
+    }
+}
+
 @media screen and (max-width: 1300px) {
     body {
         width: 100%;
