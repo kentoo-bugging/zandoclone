@@ -348,6 +348,18 @@ header .auth ul li a:hover {
         font-size: 18px;
         font-weight: 500;
     }
+
+    .color-choice {
+        display: flex;
+        gap: 5px;
+
+        .color {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #888;
+            border-radius: 4px;
+        }
+    }
 }
 
 .grid-boxes {
